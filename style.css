@@ -152,16 +152,17 @@ nav .fas {
 
 	}
 	.nav-links{
-		display: none;
 		position: absolute;
+		position: fixed;
 		background: #f44336;
 		height: 100vh;
-		width: 200px;
 		top: 0;
-		right: -200px;
-		text-align: left;
+		max-width: 100%;
+		display: flex;	
+		right: 0;
+		align-items: flex-start;
+		justify-content: space-between;
 		z-index: 2;
-		transition: 1s;
 	}
 	nav .fas {
 		display: block;
