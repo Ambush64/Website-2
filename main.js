@@ -1,11 +1,16 @@
-var navlinks = document.getElementById("nav-links")
+$(document).ready(function(){
+	var navlinks = document.querySelector(".showmenu");
+	var nav = document.querySelector(".nav-links")
+	$(navlinks).click(function(){
+		$(nav).show(1500)
 
-function showMenu(){
-	navlinks.style.right = "0px";
-	navlinks.style.display = "block"
-}
+		
+		
+	})
 
-function hideMenu(){
-	navlinks.style.right = "-200px";
-	navlinks.style.display = "block"
-}
+	var navhide =document.querySelector(".hidemenu")
+
+	$(navhide).click(function(){
+		$(nav).hide(1500)
+	})
+})
